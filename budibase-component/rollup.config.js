@@ -12,7 +12,7 @@ import fs from "fs"
 import pkg from "./package.json"
 import crypto from "crypto"
 import { validate } from "@budibase/backend-core/plugins"
-
+const production = !process.env.ROLLUP_WATCH;
 const ignoredWarnings = [
   "unused-export-let",
   "css-unused-selector",
@@ -80,7 +80,7 @@ const validateSchema = () => ({
 export default {
   input: "index.js",
   output: {
-    sourcemap: process.env.ROLLUP_WATCH ? "inline" : false,
+    sourcemap: true,
     format: "iife",
     file: "dist/plugin.min.js",
     name: "plugin",

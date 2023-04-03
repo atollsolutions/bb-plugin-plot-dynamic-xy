@@ -8,7 +8,8 @@
 
 	let svg;
 	let size = 0.8;
-
+	let width=350;
+	let height=350;
 	const padding = { top: 20, right: 20, bottom: 5, left: 25 };
 	
 	let xScale, yScale, xTicks, yTicks;
@@ -36,15 +37,15 @@
 		}
 	}
 
-	onMount(() => {
-		calculateScales();
-		resize();
-	});
+
 
 	afterUpdate(() => {
 		calculateScales();
 	});
-
+	onMount(() => {
+		calculateScales();
+		resize();
+	});
 	onDestroy(() => {
 		xScale = null;
 		yScale = null;
@@ -107,12 +108,7 @@
 		fill-opacity: 0.6;
 		stroke: rgba(0,0,0,0.5);
 	}
-	.v1 {
-		fill: rgb(20, 40, 129);
 
-		fill-opacity: 0.6;
-		stroke: rgba(0,0,0,0.5);
-	}
 	.tick line {
 		stroke: rgb(1, 4, 14);
 		stroke-dasharray: 2;

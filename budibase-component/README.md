@@ -1,4 +1,4 @@
-# Budibase-component
+# plot-dynamic-xy
 This is a readme for your new Budibase plugin.
 
 # Description

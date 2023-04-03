@@ -78,7 +78,6 @@
   <div class="chart">
 	<Internal on:trigger={trigger} interval={interval} {dataProviderdynamic}  {nodx} {nody} {xaxis} {yaxis} {xaxisd} {yaxisd} {tc} Data={dataa.a} scaleobject1={scale_object}/>
   </div>
-  
   <style>
 	.chart {
 	  width: 100%;
