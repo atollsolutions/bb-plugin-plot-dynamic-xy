@@ -84,13 +84,13 @@
 	{#each points as point}
   {#if !(isNaN(point.x) || isNaN(point.y))}
     <circle cx='{xScale(point.x)}' cy='{yScale(point.y)}' r='5'/>
-    <title>This point is static</title>
+    
   {/if}
 {/each}
 	{#each points1 as pointt}
 	 {#if !(isNaN(pointt.x) || isNaN(pointt.y))}
 		<circle class='v1' cx='{xScale(pointt.x)}' cy='{yScale(pointt.y)}' r='5'/>
-		<title>This point is dynamic</title>
+		
 		{/if}
 	{/each}
 	{/if}
@@ -105,6 +105,11 @@
 
 	circle {
 		fill: orange;
+		fill-opacity: 0.6;
+		stroke: rgba(0,0,0,0.5);
+	}
+	circle.v1{
+		fill: blue;
 		fill-opacity: 0.6;
 		stroke: rgba(0,0,0,0.5);
 	}
