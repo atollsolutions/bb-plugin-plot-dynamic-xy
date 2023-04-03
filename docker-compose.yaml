@@ -6,7 +6,7 @@ services:
   app-service:
     restart: unless-stopped
     image: budibase.docker.scarf.sh/budibase/apps
-    container_name: bbapps
+    container_name: bbapps4
     environment:
       SELF_HOSTED: 1
       COUCH_DB_URL: http://${COUCH_DB_USER}:${COUCH_DB_PASSWORD}@couchdb-service:5984
@@ -35,7 +35,7 @@ services:
   worker-service:
     restart: unless-stopped
     image: budibase.docker.scarf.sh/budibase/worker
-    container_name: bbworker
+    container_name: bbworker4
     environment:
       SELF_HOSTED: 1
       PORT: 4003
@@ -77,7 +77,7 @@ services:
     restart: unless-stopped
     ports:
       - "${MAIN_PORT}:10000"
-    container_name: bbproxy
+    container_name: bbproxy4
     image: budibase/proxy
     environment:
       - PROXY_RATE_LIMIT_WEBHOOKS_PER_SECOND=10

@@ -2,7 +2,7 @@
   "type": "component",
   "metadata": {},
   "schema": {
-    "name": "budibase-component",
+    "name": "plot-xy-dynamic",
     "friendlyName": "plot dynamic",
     "description": "An amazing Budibase component!",
     "icon": "Text",

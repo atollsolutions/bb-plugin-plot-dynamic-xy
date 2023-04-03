@@ -1,0 +1,17 @@
+Budibase Error
+The BB_ADMIN_USER_EMAIL variable is not set. Defaulting to a blank string.
+The BB_ADMIN_USER_PASSWORD variable is not set. Defaulting to a blank string.
+plotxy-dynamic_minio-service_1 is up-to-date
+plotxy-dynamic_couchdb-service_1 is up-to-date
+plotxy-dynamic_redis-service_1 is up-to-date
+plotxy-dynamic_watchtower-service_1 is up-to-date
+Starting plotxy-dynamic_couch-init_1 ... 
+[1A[2KStarting plotxy-dynamic_couch-init_1 ... [32mdone[0m[1BRecreating bbworker4                 ... 
+[1A[2KRecreating bbworker4                 ... [32mdone[0m[1Bbbapps4 is up-to-date
+Recreating bbproxy4                  ... 
+Host is already in use by another container
+[1A[2KRecreating bbproxy4                  ... [31merror[0m[1B
+ERROR: for bbproxy4  Cannot start service proxy-service: driver failed programming external connectivity on endpoint bbproxy4 (267847d64ec49be30571dc5e08ffa36783bf40925d0251797b4e4e59e5c724f9): Bind for 0.0.0.0:10004 failed: port is already allocated
+
+ERROR: for proxy-service  Cannot start service proxy-service: driver failed programming external connectivity on endpoint bbproxy4 (267847d64ec49be30571dc5e08ffa36783bf40925d0251797b4e4e59e5c724f9): Bind for 0.0.0.0:10004 failed: port is already allocated
+Encountered errors while bringing up the project.
